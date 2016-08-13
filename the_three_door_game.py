@@ -2,8 +2,12 @@
 import time
 import random
 
+print '经典问题，三扇门后只有一扇有积分，剩下两扇什么都没有，当你选中一扇后，游戏主持人会从剩下两扇门中挑出一扇没有积分的，打开给你看，好了，我们来比一比谁的积分可以更高吧！'
 score = 0
+roundtime = 1
 while True:
+	print '当前积分为：',score
+	print '第',roundtime,'回合'
 	print '正在往门后放积分...'
 	time.sleep(1)
 	print '积分安放完成~'
@@ -130,7 +134,7 @@ while True:
 	score = score + scorenow
 
 	print '你当前的分数为',score
-
+	roundtime = roundtime + 1
 	raw_input('按下回车键进入下一回合~')
 
 
